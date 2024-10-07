@@ -5,13 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fast-Delivered Apps for Forward-Thinking Companies</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
-<body>
-    <div id="root"></div>
-    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="app.js" type="text/babel"></script>
+<body class="font-sans">
+    <div id="presentation">
+        <!-- Slide 1: Introduction -->
+        <div class="slide bg-gradient-to-r from-blue-50 to-gray-50">
+            <div class="text-center">
+                <h2 class="headline">Fast-Delivered Apps for Forward-Thinking Companies</h2>
+                <p class="subheadline">Empowering Your Business with Cutting-Edge Technology</p>
+            </div>
+        </div>
+
+        <!-- Slide 2: Our Approach -->
+        <div class="slide bg-white">
+            <div>
+                <h2 class="headline">Our Approach: The Double Diamond</h2>
+                <div class="mt-8 flex justify-between items-center">
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-blue-500 rotate-45 mb-4"></div>
+                        <p class="text-gray-700">Discover</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-blue-500 rotate-45 mb-4"></div>
+                        <p class="text-gray-700">Define</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-blue-500 rotate-45 mb-4"></div>
+                        <p class="text-gray-700">Develop</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-blue-500 rotate-45 mb-4"></div>
+                        <p class="text-gray-700">Deliver</p>
+                    </div>
+                </div>
+                <div class="mt-8 text-center text-gray-600">
+                    Continuous Discovery & Continuous Delivery
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Our Differentiators -->
+        <div class="slide bg-gradient-to-r from-gray-50 to-blue-50">
+            <div>
+                <h2 class="headline">Why Choose Us?</h2>
+                <div class="mt-8" id="reasons-container">
+                    <!-- Reasons will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Our Process -->
+        <div class="slide bg-white">
+            <div>
+                <h2 class="headline">Our Process: Iterative Excellence</h2>
+                <div class="flex justify-between items-center mt-8">
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 rounded-full bg-blue-500 flex items-center justify-center text-white text-2xl mb-4">1</div>
+                        <p class="text-gray-700 text-center">Fast Delivery</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 rounded-full bg-blue-500 flex items-center justify-center text-white text-2xl mb-4">2</div>
+                        <p class="text-gray-700 text-center">User Feedback</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 rounded-full bg-blue-500 flex items-center justify-center text-white text-2xl mb-4">3</div>
+                        <p class="text-gray-700 text-center">Continuous Improvement</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 rounded-full bg-blue-500 flex items-center justify-center text-white text-2xl mb-4">4</div>
+                        <p class="text-gray-700 text-center">Business Growth</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Call to Action -->
+        <div class="slide bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+            <div class="text-center">
+                <h2 class="headline">Ready to Transform Your Business?</h2>
+                <p class="subheadline">Let's build your success story together</p>
+                <button class="mt-8 px-8 py-3 bg-white text-blue-600 rounded-full text-xl font-semibold flex items-center hover:bg-gray-100 transition-colors">
+                    Get Started <i data-lucide="chevron-right" class="ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
